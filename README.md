@@ -11,21 +11,22 @@ python SMTP_mail_client.py
 
 ## TCP/IP TMultithreaded Messaging-App Execution
 
+Just used port 5000 as default
 **For Listener/Server:**
 ```bash
 python P2P_chat_app.py --listen --port 5000 --name YourNameHere
 ```
-
+Program allows for connection across devices (not just localhost) through IP address in --host part.
 **For Connector/Client:**
 ```bash
-python P2P_chat_app.py --host <IP_ADDRESS> --port 5000 --name YourNameHere
+python P2P_chat_app.py --host localhost --port 5000 --name YourNameHere
 ```
 
-## ICMP/TCP TraceRoute Pinger Execuion
+## ICMP/TCP Pinger Execuion
 
-Requires administrator/root privileges for ICMP raw socket access on most systems.
+Requires administrator/root privileges for ICMP raw socket access on most systems. Make sure to change hostname to whatever website you want to ping.
 ```bash
-python ICMP_traceroute.py <hostname>
+python ICMP_pinger.py <hostname>
 ```
 
 ## Multithreaded HTTP Proxy Server Exection
@@ -33,16 +34,22 @@ python ICMP_traceroute.py <hostname>
 ```bash
 python HTTP_ProxyServer.py localhost
 ```
-Access via browser assuming you host it on your computer: http://localhost:8888/index.html
+Only works with HTTP websites for the most part, accessible through your browser.
+You can bind it to your LAN IP or 0.0.0.0 to allow other devices to connect
+**Format Example:**
+http://localhost:8888/httpforever.com/
+
+## ICMP/TCP TraceRoute Pinger Execuion
+
+Requires administrator/root privileges for ICMP raw socket access on most systems. Make sure to change hostname to whatever website you want to ping.
+```bash
+python ICMP_traceroute.py <hostname>
+```
 
 ## HTTP WebServer Execution
 
 ```bash
 python WebServer.py
 ```
-Only works with HTTP websites for the most part.
-The format via browser assuming you host it on your computer: http://localhost:8888/httpforever.com/
-
-
-
-
+Access via browser assuming you host it on your computer: http://localhost:8888/index.html
+You can bind it to your LAN IP or 0.0.0.0 to allow other devices to connect.
