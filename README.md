@@ -34,7 +34,7 @@ python ICMP_pinger.py <hostname>
 ```bash
 python HTTP_ProxyServer.py localhost
 ```
-Only works with HTTP websites for the most part, accessible through your browser.
+Only works with HTTP websites for the most part, accessible through your browser. \
 You can bind it to your LAN IP or 0.0.0.0 to allow other devices to connect
 **Format Example:**
 http://localhost:8888/httpforever.com/
@@ -51,5 +51,5 @@ python ICMP_traceroute.py <hostname>
 ```bash
 python WebServer.py
 ```
-Access via browser assuming you host it on your computer: http://localhost:8888/index.html
+Access via browser assuming you host it on your computer: http://localhost:8888/index.html \
 You can bind it to your LAN IP or 0.0.0.0 to allow other devices to connect.
