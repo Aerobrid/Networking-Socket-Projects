@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-p2p_chat.py - peer-to-peer chat using TCP sockets and threading
+p2p_chat_app.py - peer-to-peer chat using TCP sockets and threading
 
 Usage:
   To listen/wait for a connection:
-    python p2p_chat.py --listen --port 5000 --name User1Name
+    python p2p_chat_app.py --listen --port 5000 --name User1Name
 
   To connect to a peer:
     python P2P_chat_app.py --host 1.2.3.4 --port 5000 --name User2Name
