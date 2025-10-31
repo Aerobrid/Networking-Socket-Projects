@@ -11,12 +11,12 @@ python SMTP_mail_client.py
 
 ## TCP/IP TMultithreaded Messaging-App Execution
 
-Just used port 5000 as default
+Just used port 5000 as default \
 **For Listener/Server:**
 ```bash
 python P2P_chat_app.py --listen --port 5000 --name YourNameHere
 ```
-Program allows for connection across devices (not just localhost) through IP address in --host part.
+Program allows for connection across devices (not just localhost) through IP address in --host part. \
 **For Connector/Client:**
 ```bash
 python P2P_chat_app.py --host localhost --port 5000 --name YourNameHere
