@@ -52,5 +52,5 @@ python ICMP_traceroute.py <hostname>
 ```bash
 python WebServer.py
 ```
-Access via browser assuming you host it on your computer: http://localhost:8888/index.html \
+Access via browser assuming you host it on your computer: http://localhost:6789/index.html \
 You can bind it to your LAN IP or 0.0.0.0 to allow other devices to connect.
