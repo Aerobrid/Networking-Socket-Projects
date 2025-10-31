@@ -36,8 +36,9 @@ python HTTP_ProxyServer.py localhost
 ```
 Only works with HTTP websites for the most part, accessible through your browser.
 You can bind it to your LAN IP or 0.0.0.0 to allow other devices to connect \
+**Make sure to add cache folder** \
 **Format Example Assuming localhost:**
-http://localhost:8888/httpforever.com/
+http://localhost:8888/httpforever.com/ 
 
 ## ICMP/TCP TraceRoute Pinger Execuion
 
